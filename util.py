@@ -5,7 +5,6 @@ from collections import defaultdict
 from export_data import *
 
 def export_county():
-
     logging.info('query attrs...')
     sql = 'select attr_name,attr_of_total,attr_value,page_id from attr'
     query_op = dbop()
@@ -35,13 +34,13 @@ def export_county():
 
     ## 读取 county 以及msa
     county_info = {}
-    sql = 'select mid,name,state_id from country'
+    sql = 'select id,name,state_id from country'
     for mid,name,state_id in query_op.query_database(sql):
         state_name = sid_name[state_id]
         county_info[mid] = [name,state_name]
 
     msa_info = {}
-    sql = 'select mid,name,state_id from msa'
+    sql = 'select id,name,state_id from msa'
     for mid,name,state_id in query_op.query_database(sql):
         state_name = sid_name[state_id]
         msa_info[mid] = [name,state_name]
