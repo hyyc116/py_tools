@@ -17,13 +17,13 @@ def export_county():
     ##读取page的表， # 每一个page对应的attrs
     logging.info('query pages...')
     sql = 'select id,keywords,data_id from page'
-    did_pages = defaultdict(list)
+    pages = defaultdict(list)
     for pid,keywords,data_id in query_op.query_database(sql):
         # did_pages[data_id].append(keywords)
         attrs = pid_attrs[pid]
         for attr in attrs:
             attr.append(keywords)
-            did_pages[data_id].append(attr)
+            pages[pid].append(attr)
 
     ## 读取state 以及 county msa的数据
     logging.info('query county msa...')
@@ -47,6 +47,61 @@ def export_county():
 
     logging.info('size of county:{:}'.format(len(county_info)))
     logging.info('size of msa:{:}'.format(len(msa_info)))
+
+    ## 读取data piece
+    logging.info('query county datapiece ...')
+    data = []
+
+    sql = 'select year,businessall_id,businessnoncommercial_id,businessnonresident_id,businessresident_id,country_id,gained_id,jobs_id,lost_id,msa_id,netchange_id,saleall_id,salesperbusiness_id,salesperemployee_id,state_id from datapiece'
+    for row in query_op.query_database(sql):
+        year,businessall_id,businessnoncommercial_id,businessnonresident_id,businessresident_id,country_id,gained_id,jobs_id,lost_id,msa_id,netchange_id,saleall_id,salesperbusiness_id,salesperemployee_id,state_id = row
+
+        ## 年份
+        line =[str(year)]
+        ## county or
+        if country_id is not None:
+            line.extend(county_info[country_id])
+            line.append('county')
+        else:
+            line.extend(msa_info[country_id])
+            line.append('MSA')
+
+        businessall=pages[businessall_id]
+        businessnoncommercial=pages[businessnoncommercial_id]
+        businessnonresident=pages[businessnonresident_id]
+        businessresident=pages[businessresident_id]
+        gained=pages[gained_id]
+        jobs=pages[jobs_id]
+        lost=pages[lost_id]
+        netchange=pages[netchange_id]
+        saleall=pages[saleall_id]
+        salesperbusiness=pages[salesperbusiness_id]
+        salesperemployee=pages[salesperemployee_id]
+        lines.extend(all_attrs(businessall))
+        lines.extend(all_attrs(businessnoncommercial))
+        lines.extend(all_attrs(businessnonresident))
+        lines.extend(all_attrs(businessresident))
+        lines.extend(all_attrs(gained))
+        lines.extend(all_attrs(jobs))
+        lines.extend(all_attrs(lost))
+        lines.extend(all_attrs(netchange))
+        lines.extend(all_attrs(saleall))
+        lines.extend(all_attrs(salesperbusiness))
+        lines.extend(all_attrs(salesperemployee))
+        data.add('\t'.join(lines))
+
+    open('data.txt','w').write('\n'.join(data))
+
+
+
+def all_attrs(pages):
+    col=[]
+    for attr in pages:
+        col.extend(attr)
+    return col
+
+
+
 
 
 
