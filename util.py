@@ -96,7 +96,7 @@ def export_county():
 def all_attrs(pages):
     col=[]
     for attr in pages:
-        col.extend(attr)
+        col.extend(attr[1:3])
     return col
 
 
