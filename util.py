@@ -87,7 +87,7 @@ def export_county():
         lines.extend(all_attrs(saleall))
         lines.extend(all_attrs(salesperbusiness))
         lines.extend(all_attrs(salesperemployee))
-        data.add('\t'.join(lines))
+        data.append('\t'.join(lines))
 
     open('data.txt','w').write('\n'.join(data))
 
