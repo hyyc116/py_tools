@@ -53,7 +53,9 @@ def export_county():
     data = []
 
     sql = 'select year,businessall_id,businessnoncommercial_id,businessnonresident_id,businessresident_id,country_id,gained_id,jobs_id,lost_id,msa_id,netchange_id,saleall_id,salesperbusiness_id,salesperemployee_id,state_id from datapiece'
+    is_print = True
     for row in query_op.query_database(sql):
+        
         year,businessall_id,businessnoncommercial_id,businessnonresident_id,businessresident_id,country_id,gained_id,jobs_id,lost_id,msa_id,netchange_id,saleall_id,salesperbusiness_id,salesperemployee_id,state_id = row
         ## 年份
         lines =[str(year)]
@@ -76,6 +78,20 @@ def export_county():
         saleall=pages[saleall_id]
         salesperbusiness=pages[salesperbusiness_id]
         salesperemployee=pages[salesperemployee_id]
+
+        if is_print:
+            titles = []
+
+            titles.append('year')
+            titles.append('Name')
+            titles.append('state')
+            titles.append('type')
+
+            titles.extend(all_titles(businessall,businessnoncommercial,businessnonresident,businessresident,gained,jobs,lost,netchange,saleall,salesperbusiness,salesperemployee))
+
+            data.extend(','.join(titles))
+            is_print=False
+
         lines.extend(all_attrs(businessall))
         lines.extend(all_attrs(businessnoncommercial))
         lines.extend(all_attrs(businessnonresident))
@@ -99,10 +115,28 @@ def all_attrs(pages):
         col.extend(attr[1:3])
     return col
 
+def all_title(pages):
+    tits=[]
+    for attr in pages:
+        tits.append(attr[3]+":"+attr[0]+":attr_of_total")
+        tits.append(attr[3]+":"+attr[0]+":attr_value")
 
+    return tits
 
-
-
+def all_titles(businessall,businessnoncommercial,businessnonresident,businessresident,gained,jobs,lost,netchange,saleall,salesperbusiness,salesperemployee):
+    titles = []
+    titles.extend(all_title(businessall))
+    titles.extend(all_title(businessnoncommercial))
+    titles.extend(all_title(businessnonresident))
+    titles.extend(all_title(businessresident))
+    titles.extend(all_title(gained))
+    titles.extend(all_title(jobs))
+    titles.extend(all_title(lost))
+    titles.extend(all_title(netchange))
+    titles.extend(all_title(saleall))
+    titles.extend(all_title(salesperbusiness))
+    titles.extend(all_title(salesperemployee))
+    return titles
 
 def output_csv(path):
     samples=[]
