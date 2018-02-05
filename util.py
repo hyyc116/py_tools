@@ -174,8 +174,9 @@ def output_csv(path):
 def test_cols(path):
     for line in open(path):
         line = line.strip()
-        if len(line.split("\t"))!=96:
-            print 'false'
+        print len(line.split("\t"))
+        # if len(line.split("\t"))!=96:
+        #     print 'false'
 
 def wrong_place(path):
     place_year=defaultdict(list)
@@ -201,6 +202,8 @@ if __name__ == '__main__':
     # output_csv(sys.argv[1])
     # test_cols('County_checked.txt')
     # wrong_place('County_checked.txt')
-    export_county()
+    # export_county()
+    test_cols(sys.argv[1])
+
 
 
