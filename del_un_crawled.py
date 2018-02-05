@@ -18,7 +18,7 @@ def del_data():
     count=0
     for mid,name in query_op.query_database(sql):
         if name not in msas:
-            del_op.execute_sql('update datapiece set msa_id = -1 where country_id={:}'.format(mid))
+            del_op.execute_sql('update datapiece set country_id = -1 where country_id={:}'.format(mid))
             count+=1
             print count 
 
