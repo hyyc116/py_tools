@@ -62,7 +62,7 @@ def export_county():
             lines.extend(county_info[country_id])
             lines.append('county')
         else:
-            lines.extend(msa_info[country_id])
+            lines.extend(msa_info[msa_id])
             lines.append('MSA')
 
         businessall=pages[businessall_id]
