@@ -45,8 +45,8 @@ def export_county():
         state_name = sid_name[state_id]
         msa_info[mid] = [name,state_name]
 
-    logging.info('size of county:',len(county_info))
-    logging.info('size of msa:',len(msa_info))
+    logging.info('size of county:{:}'.format(len(county_info)))
+    logging.info('size of msa:{:}'.format(len(msa_info)))
 
 
 
