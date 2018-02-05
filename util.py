@@ -89,7 +89,7 @@ def export_county():
 
             titles.extend(all_titles(businessall,businessnoncommercial,businessnonresident,businessresident,gained,jobs,lost,netchange,saleall,salesperbusiness,salesperemployee))
 
-            data.add('\t'.join(titles))
+            data.append('\t'.join(titles))
             is_print=False
 
         lines.extend(all_attrs(businessall))
