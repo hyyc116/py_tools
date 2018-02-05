@@ -55,16 +55,15 @@ def export_county():
     sql = 'select year,businessall_id,businessnoncommercial_id,businessnonresident_id,businessresident_id,country_id,gained_id,jobs_id,lost_id,msa_id,netchange_id,saleall_id,salesperbusiness_id,salesperemployee_id,state_id from datapiece'
     for row in query_op.query_database(sql):
         year,businessall_id,businessnoncommercial_id,businessnonresident_id,businessresident_id,country_id,gained_id,jobs_id,lost_id,msa_id,netchange_id,saleall_id,salesperbusiness_id,salesperemployee_id,state_id = row
-
         ## 年份
-        line =[str(year)]
+        lines =[str(year)]
         ## county or
         if country_id is not None:
-            line.extend(county_info[country_id])
-            line.append('county')
+            lines.extend(county_info[country_id])
+            lines.append('county')
         else:
-            line.extend(msa_info[country_id])
-            line.append('MSA')
+            lines.extend(msa_info[country_id])
+            lines.append('MSA')
 
         businessall=pages[businessall_id]
         businessnoncommercial=pages[businessnoncommercial_id]
