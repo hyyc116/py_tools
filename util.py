@@ -119,7 +119,7 @@ def all_attrs(pages,atype):
     for attr in pages:
         col.extend(attr[1:3])
     
-    if pages is None | len(col)==0:
+    if pages is None or len(col)==0:
         col=['NULL']*type_lenght[atype]
     else:
         return col
