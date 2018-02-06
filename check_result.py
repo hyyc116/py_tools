@@ -11,6 +11,9 @@ def test_cols(path):
         ## 长度是196 入股
         if length!=196:
             print line
+
+        if "NULL" not in line:
+            print line
             # print line
         # if length >4 and splits[3]=='MSA':
 
@@ -37,7 +40,7 @@ def wrong_place(path):
             print atype+"\t"+place+"\t"+"\t".join([str(i) for i in atype_place_year[atype][place]])
 
 if __name__ == '__main__':
-    # test_cols(sys.argv[1])
-    wrong_place(sys.argv[1])
+    test_cols(sys.argv[1])
+    # wrong_place(sys.argv[1])
 
 
