@@ -7,9 +7,10 @@ def test_cols(path):
     for line in open(path):
         line = line.strip()
         length= len(line.split("\t"))
-        if length!=196:
+        if length!=196 and length = 4:
+            print line
             # print line
-            print length
+            
         # if len(line.split("\t"))!=96:
         #     print 'false'
 
