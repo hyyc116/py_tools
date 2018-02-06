@@ -8,12 +8,12 @@ def test_cols(path):
         line = line.strip()
         splits = line.split("\t")
         length= len(splits)
-        # if length!=196 and length == 4:
-            # print line
-            # print line
-        if length >4 and splits[3]=='MSA':
-
+        if length!=196:
             print line
+            # print line
+        # if length >4 and splits[3]=='MSA':
+
+        #     print line
             
         # if len(line.split("\t"))!=96:
         #     print 'false'
