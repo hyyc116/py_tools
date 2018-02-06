@@ -113,7 +113,7 @@ def export_county():
 
 
 def all_attrs(pages,atype):
-    logging.info(atype)
+    logging.info("hah"+atype)
     col=[]
     for attr in pages:
         col.extend(attr[1:3])
