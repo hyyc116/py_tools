@@ -20,7 +20,7 @@ def test_cols(path):
         #     print 'false'
 
 def wrong_place(path):
-    place_year=defaultdict(list)
+    atype_place_year=defaultdict(lambda:defaultdict(list))
     f = open(path)
     f.readline()
     for line in f:
@@ -28,11 +28,13 @@ def wrong_place(path):
         splits = line.split("\t")
         year = int(splits[0])
         place = splits[1]
-        place_year[place].append(year)
+        atype=splits[3]
+        atype_place_year[atype][place].append(year)
 
-    for place in place_year.keys():
-        # if len(place_year[place])==1:
-        print place+"\t"+"\t".join([str(i) for i in place_year[place]])
+    for atype in atype_place_year.keys():
+        for place in atype_place_year[atype].keys():
+            # if len(place_year[place])==1:
+            print atype+"\t"+place+"\t"+"\t".join([str(i) for i in atype_place_year[atype][place]])
 
 if __name__ == '__main__':
     # test_cols(sys.argv[1])
