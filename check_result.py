@@ -8,6 +8,7 @@ def test_cols(path):
         line = line.strip()
         splits = line.split("\t")
         length= len(splits)
+        ## 长度是196 入股
         if length!=196:
             print line
             # print line
@@ -29,14 +30,15 @@ def wrong_place(path):
         place = splits[1]
         place_year[place].append(year)
 
-    yearset = set(range(1999,2017))
+    # yearset = set(range(1999,2017))
 
     for place in place_year.keys():
-        if len(yearset - set(place_year[place]))!=0:
-            print place,yearset - set(place_year[place])
+        # if len(yearset - set(place_year[place]))!=0:
+            # print place,yearset - set(place_year[place])
+        print place+"\t"+place_year[place]
 
 if __name__ == '__main__':
-    test_cols(sys.argv[1])
-    # wrong_place(sys.argv[1])
+    # test_cols(sys.argv[1])
+    wrong_place(sys.argv[1])
 
 
