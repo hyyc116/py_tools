@@ -36,7 +36,7 @@ def wrong_place(path):
             print place,yearset - set(place_year[place])
 
 if __name__ == '__main__':
-    # test_cols(sys.argv[1])
-    wrong_place(sys.argv[1])
+    test_cols(sys.argv[1])
+    # wrong_place(sys.argv[1])
 
 
