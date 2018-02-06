@@ -6,11 +6,13 @@ from export_data import *
 def test_cols(path):
     for line in open(path):
         line = line.strip()
-        length= len(line.split("\t"))
+        splits = line.split("\t")
+        length= len(splits)
         # if length!=196 and length == 4:
             # print line
             # print line
-        if length >4:
+        if length >4 and splits[2]=='county':
+
             print line
             
         # if len(line.split("\t"))!=96:
