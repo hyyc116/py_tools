@@ -11,7 +11,7 @@ def test_cols(path):
         # if length!=196 and length == 4:
             # print line
             # print line
-        if length >4 and splits[3]=='county':
+        if length >4 and splits[3]=='MSA':
 
             print line
             
