@@ -204,8 +204,8 @@ if __name__ == '__main__':
     # output_csv(sys.argv[1])
     # test_cols('County_checked.txt')
     # wrong_place('County_checked.txt')
-    # export_county()
-    test_cols(sys.argv[1])
+    export_county()
+    # test_cols(sys.argv[1])
 
 
 
