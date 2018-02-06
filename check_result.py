@@ -89,6 +89,6 @@ if __name__ == '__main__':
     # test_cols(sys.argv[1])
     # wrong_place(sys.argv[1])
     # out_check()
-    two_data()
+    two_data(sys.argv[1])
 
 
