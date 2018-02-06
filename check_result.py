@@ -32,7 +32,7 @@ def wrong_place(path):
 
     for place in place_year.keys():
         # if len(place_year[place])==1:
-        print place+"\t"+"\t".join(place_year[place])
+        print place+"\t"+"\t".join([str(i) for i in place_year[place]])
 
 if __name__ == '__main__':
     # test_cols(sys.argv[1])
