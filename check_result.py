@@ -22,6 +22,25 @@ def test_cols(path):
         # if len(line.split("\t"))!=96:
         #     print 'false'
 
+def out_check():
+    year_name_set=set([])
+    for line in open("errors.txt"):
+        line = line.strip()
+        splits = line.split("\t")
+        name = splits[1]
+        years = splits[2:]
+        for year in years:
+            year_name_set.add('{:}\t{:}'.format(name,year))
+
+    for line in open('data.txt'):
+        line = line.strip()
+        splits = line.split('\t')
+        if '{:}\t{:}'.format(splits[1],splits[0]) in year_name_set:
+            print line
+
+
+
+
 def wrong_place(path):
     atype_place_year=defaultdict(lambda:defaultdict(list))
     f = open(path)
@@ -40,7 +59,8 @@ def wrong_place(path):
             print atype+"\t"+place+"\t"+"\t".join([str(i) for i in atype_place_year[atype][place]])
 
 if __name__ == '__main__':
-    test_cols(sys.argv[1])
+    # test_cols(sys.argv[1])
     # wrong_place(sys.argv[1])
+    out_check()
 
 

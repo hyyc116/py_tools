@@ -1,0 +1,456 @@
+county	Dallas (MO)	2000
+county	Webster (MS)	2003
+county	Kinney (TX)	2000
+county	Gregory (SD)	2000
+county	Turner (GA)	2000
+county	Wade Hampton (AK)	2002
+county	Chester (TN)	2016
+county	Brown (IL)	2000
+county	Northwest Arctic (AK)	2002
+county	Sully (SD)	2000	2005
+county	Butler (KY)	2000
+county	Lincoln (KS)	2000	2007
+county	Forest (PA)	2000
+county	Josephine (OR)	2014
+county	Garfield (UT)	2000
+county	Dunn (ND)	2000	2008
+county	Mineral (WV)	2012
+county	Dundy (NE)	2000
+county	Monroe (AR)	2007
+county	Shannon (MO)	2000
+county	Howard (NE)	2002
+county	Camas (ID)	2000
+county	Corson (SD)	2002
+county	Greenlee (AZ)	2000
+county	Jeff Davis (TX)	2000
+county	Luce (MI)	1999
+county	Huntington (IN)	2000
+county	Summit (CO)	2000
+county	Henderson (TN)	2004
+county	Treasure (MT)	2000	2002
+county	Schuyler (IL)	2000
+county	Rooks (KS)	2000
+county	Grand (CO)	2000
+county	Cheyenne (CO)	2000
+county	Schoolcraft (MI)	2008
+county	Warren (GA)	2000
+county	Fulton (AR)	2000
+county	Gilpin (CO)	2000
+county	Morgan (CO)	1999	2000	2001	2002	2003	2004
+county	Mills (TX)	2005
+county	Bon Homme (SD)	2000	2001
+county	Chase (NE)	2000
+county	Irion (TX)	2000
+county	Traverse (MN)	2000
+county	Colonial Heights (VA)	2001
+county	Zapata (TX)	2000
+county	Marion (GA)	2002
+county	Jones (NC)	2013
+county	Walla Walla (WA)	1999	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009
+county	Choctaw (AL)	2000
+county	Glasscock (TX)	2000	2002
+county	Valley (NE)	2000
+county	Baker (GA)	2000
+county	Mercer (MO)	2000	2001
+county	Whatcom (WA)	2014	2015	2016
+county	Hansford (TX)	2002
+county	Tripp (SD)	2000
+county	Archer (TX)	2000
+county	Edgecombe (NC)	2001	2014
+county	Calcasieu (LA)	2008
+county	Lagrange (IN)	2013
+county	Otero (CO)	2009	2010	2011	2012	2013	2014	2015	2016
+county	Dolores (CO)	2000
+county	Judith Basin (MT)	2002
+county	Delaware (IA)	2016
+county	Modoc (CA)	2000
+county	Belmont (OH)	1999	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010
+county	Edmunds (SD)	2000	2002
+county	Aitkin (MN)	2000	2008
+county	Monroe (WV)	2000
+county	Montgomery (AR)	2002
+county	Winkler (TX)	2014
+county	Clearwater (ID)	2004
+county	Simpson (KY)	2012
+county	Hyde (SD)	2000	2005
+county	Lincoln (ID)	2000	2008
+county	Allen (KY)	2000
+county	Concho (TX)	2000
+county	Mingo (WV)	2000
+county	Big Stone (MN)	2006
+county	Bibb (AL)	2000
+county	Southampton (VA)	2000
+county	Fannin (TX)	2000
+county	Hettinger (ND)	2000
+county	De Baca (NM)	1999	2005
+county	Mountrail (ND)	2000
+county	Rock (NE)	2000
+county	Mineral (MT)	2000
+county	Sierra (CA)	2000
+county	Saluda (SC)	2000
+county	Lane (KS)	1999	2007	2008
+county	Sheridan (KS)	2000
+county	Logan (OK)	1999	2000	2001	2002	2003	2004	2005
+county	Charles City (VA)	2000
+county	Seward (NE)	2000
+county	Pendleton (WV)	2002
+county	Ozark (MO)	2000
+county	Taliaferro (GA)	2000
+county	Webster (GA)	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015
+county	Clay (TN)	2000	2007
+county	McCreary (KY)	2013
+county	Yates (NY)	2010
+county	Gallatin (KY)	2000
+county	Pulaski (IL)	2000
+county	Shannon (SD)	2000
+county	Powder River (MT)	2000
+county	Grant (OK)	2000
+county	Chambers (TX)	2003	2004
+county	Fremont (IA)	2010
+county	Walworth (SD)	2000
+county	Wibaux (MT)	2000
+county	Hamilton (IL)	2000
+county	Clay (AR)	2004
+county	Antrim (MI)	2010
+county	Rutherford (TN)	2002
+county	Rains (TX)	2000
+county	Wheeler (OR)	2002	2003
+county	Crane (TX)	2002
+county	Harding (NM)	2002
+county	Pope (IL)	2000
+county	Highland (VA)	2005
+county	Tyrrell (NC)	2000	2010
+county	Harper (KS)	2015
+county	Caribou (ID)	2000
+county	Golden Valley (MT)	2000
+county	Scott (IL)	2000
+county	Foard (TX)	2002
+county	Webster (WV)	2002
+county	Morrill (NE)	2000
+county	Tate (MS)	2000
+county	Adams (ND)	2000
+county	Wheatland (MT)	2000
+county	Yankton (SD)	1999	2000	2001	2002	2003	2004	2005	2006	2007
+county	Morton (KS)	2000
+county	Jackson (AR)	2002
+county	Lee (VA)	2000
+county	Thomas (NE)	2000
+county	King (TX)	1999	2002	2009
+county	Putnam (MO)	2000	2001	2009
+county	Perry (TN)	2000
+county	Crowley (CO)	2002
+county	Bland (VA)	2000
+county	Leon (TX)	2009
+county	Hooker (NE)	2000
+county	Graham (KS)	2015
+county	Shelby (IA)	2013
+county	Wheeler (GA)	2002
+county	Hickory (MO)	2000
+county	Hemphill (TX)	2002
+county	Stanley (SD)	2000
+county	Routt (CO)	2000
+county	Johnson (AR)	2013
+county	Lamar (AL)	2011
+county	Roberts (SD)	2000
+county	Grant (NE)	2000
+county	Noble (OH)	2000
+county	Aleutians West (AK)	2002
+county	Mariposa (CA)	2002
+county	Traill (ND)	2000
+county	Lewis (ID)	2000
+county	Denali (AK)	2000
+county	Lincoln (CO)	2000
+county	Harmon (OK)	2000
+county	Rio Blanco (CO)	2000
+county	Karnes (TX)	2016
+county	Chicot (AR)	2011
+county	Boyd (NE)	2000
+county	Day (SD)	2000
+county	Greensville (VA)	2000
+county	Deuel (NE)	2000
+county	Calhoun (SC)	2009	2010	2011	2012	2013	2014	2015	2016
+county	Lafayette (FL)	2000
+county	Bell (KY)	1999	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009
+county	Bourbon (KY)	2009	2010	2011	2012	2013	2014	2015	2016
+county	Prairie (MT)	2000	2011
+county	Milwaukee (WI)	2013	2014	2015	2016
+county	Potter (SD)	2000
+county	Leslie (KY)	2000
+county	Union (NM)	2000
+county	Lincoln (NV)	2000	2005
+county	Cumberland (KY)	2000
+county	Sterling (TX)	2000
+county	Brooks (GA)	2008
+county	Throckmorton (TX)	2000
+county	Ellsworth (KS)	2000
+county	Johnson (NE)	2000
+county	Sherman (TX)	2000
+county	Prowers (CO)	2012
+county	Logan (CO)	2001
+county	Martin (KY)	2000
+county	Gosper (NE)	1999	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2014
+county	Sargent (ND)	2000
+county	Swisher (TX)	2005
+county	Cocke (TN)	2000
+county	Kiowa (KS)	2000
+county	Murray (MN)	1999
+county	Logan (NE)	2000	2002	2011
+county	Clay (GA)	2002
+county	Stewart (TN)	2000
+county	Billings (ND)	2000
+county	Placer (CA)	1999
+county	Haakon (SD)	2000	2003	2012
+county	Sweet Grass (MT)	2000
+county	King and Queen (VA)	2000
+county	Adair (IA)	2000
+county	Trinity (TX)	2014
+county	Faulk (SD)	2000
+county	Bear Lake (ID)	2000
+county	Christian (IL)	1999
+county	Horry (SC)	1999	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012
+county	Hinsdale (CO)	2000
+county	King William (VA)	2000
+county	Oglethorpe (GA)	2000
+county	San Juan (CO)	2000
+county	McPherson (NE)	2000	2002
+county	Tyler (WV)	2000
+county	Arenac (MI)	2008
+county	Jennings (IN)	2000
+county	Keweenaw (MI)	2000
+county	Motley (TX)	2002
+county	Dooly (GA)	2016
+county	Jones (TX)	2006	2010
+county	Carter (MT)	2000
+county	Kenedy (TX)	1999	2002	2004	2006	2008	2015
+county	Rich (UT)	2000
+county	Rush (KS)	2000	2008
+county	Clay (TX)	2000
+county	Bennett (SD)	2000	2003
+county	Deuel (SD)	2000
+county	Hamilton (FL)	2000
+county	Pershing (NV)	2000
+county	Dewey (OK)	2000
+county	Haines (AK)	2006
+county	McIntosh (GA)	2011	2015
+county	Jay (IN)	2000
+county	Hughes (OK)	2014
+county	Hamilton (NE)	2003
+county	Henry (IN)	2011
+county	Franklin (MS)	2000	2005
+county	Effingham (GA)	2000
+county	Donley (TX)	2002
+county	Waynesboro (VA)	1999	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012
+county	Butte (ID)	2000	2005
+county	Jones (SD)	2000	2005	2016
+county	Calhoun (WV)	2002
+county	Garfield (MT)	2000
+county	Todd (SD)	2000
+county	Bristol Bay (AK)	2001	2016
+county	Ogemaw (MI)	2015
+county	Houston (TN)	2000
+county	Cottle (TX)	2001
+county	Marion (AR)	2009
+county	Ward (TX)	2010
+county	Musselshell (MT)	1999
+county	Charles Mix (SD)	2000
+county	Lake (CO)	2000
+county	Golden Valley (ND)	2000
+county	Reynolds (MO)	2000
+county	Hardin (IL)	2000
+county	Quitman (GA)	2000
+county	Custer (SD)	2000
+county	Bleckley (GA)	1999	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013
+county	Reagan (TX)	2000
+county	Greene (VA)	2002
+county	Teller (CO)	2000
+county	Fallon (MT)	2000
+county	Renville (ND)	2000
+county	Jackson (SD)	2000
+county	Yuma (CO)	2005
+county	Menifee (KY)	2000
+county	McIntosh (ND)	2000
+county	Liberty (FL)	2000
+county	Smith (KS)	2000
+county	Hancock (KY)	2000
+county	Nolan (TX)	1999	2000
+county	Hood River (OR)	2001
+county	Aurora (SD)	2000
+county	Ellis (OK)	2000
+county	Sioux (ND)	2002
+county	Unicoi (TN)	2000
+county	Monroe (IA)	2009
+county	Fulton (OH)	1999
+county	Johnson (TN)	2000
+county	Fisher (TX)	2000
+county	Brunswick (VA)	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015	2016
+county	Oceana (MI)	2014
+county	Delta (TX)	2000
+county	Cloud (KS)	2002
+county	Cumberland (VA)	2000	2006	2008	2009
+county	Scott (MS)	2002
+county	Chase (KS)	2007
+county	Chittenden (VT)	1999	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012
+county	Warren (IA)	2008
+county	Weston (WY)	2000
+county	Pleasants (WV)	2000
+county	Piatt (IL)	2016
+county	Jewell (KS)	2000
+county	McCone (MT)	2000
+county	Tucker (WV)	2000
+county	Pawnee (OK)	2000	2009
+county	Tillman (OK)	2000
+county	La Plata (CO)	2000
+county	Bowman (ND)	2000
+county	Valdez-Cordova (AK)	2004	2007
+county	Baylor (TX)	2000
+county	Borden (TX)	2005	2011
+county	O'Brien (IA)	2000
+county	Glascock (GA)	2000	2002
+county	Clark (ID)	2000	2005
+county	Middlesex (VA)	2000
+county	Custer (MT)	2005
+county	Pottawatomie (OK)	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015	2016
+county	Kent (TX)	2002
+county	Piute (UT)	2000	2003	2008
+county	Moffat (CO)	2000
+county	Washington (NC)	2015
+county	Amite (MS)	2000
+county	Hitchcock (NE)	2000
+county	Petroleum (MT)	2000
+county	Davidson (NC)	2016
+county	Sanborn (SD)	2000
+county	Coke (TX)	2000
+county	Banner (NE)	2000
+county	Mercer (ND)	2009
+county	Mora (NM)	2000
+county	King George (VA)	2000
+county	Douglas (SD)	2000
+county	Jefferson (IA)	1999
+county	Boundary (ID)	2000
+county	Worth (MO)	2000
+county	Ritchie (WV)	2000
+county	Sullivan (PA)	2000
+county	McMullen (TX)	2005
+county	Texas (MO)	2007
+county	Overton (TN)	2010
+county	Decatur (KS)	2000	2001
+county	Northampton (NC)	2000
+county	Mineral (CO)	2003
+county	Campbell (SD)	2000	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012
+county	Kit Carson (CO)	2000
+county	Custer (ID)	2000
+county	Richland (ND)	2005	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015	2016
+county	Briscoe (TX)	2000	2002
+county	Rolette (ND)	1999	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2014	2015	2016
+county	Nemaha (NE)	2000
+county	Owsley (KY)	2003
+county	Stillwater (MT)	2011
+county	Northampton (VA)	2000
+county	Hidalgo (NM)	2000
+county	Martinsville (VA)	2008
+county	Madison (FL)	2009
+county	Mille Lacs (MN)	2000
+county	Winston (AL)	2003
+county	Ford (KS)	2009
+county	Wheeler (NE)	2000
+county	Carbon (MT)	2000
+county	McCormick (SC)	2000
+county	Quitman (MS)	2002
+county	Garfield (WA)	2000	2001
+county	Sherman (OR)	2003
+county	Jerauld (SD)	2000
+county	Clear Creek (CO)	2000
+county	Menard (TX)	2000
+county	Polk (NE)	2005
+county	Schuyler (MO)	2000
+county	Izard (AR)	2000
+county	Hale (AL)	2009
+county	Trimble (KY)	2006
+county	Miller (MO)	2016
+county	Montezuma (CO)	2000
+county	Warren (NC)	2000
+county	Lipscomb (TX)	2000
+county	Loving (TX)	2000	2002	2003	2004	2006	2010	2015
+county	Arthur (NE)	2000
+county	Newton (GA)	1999	2000	2001	2002	2003	2004	2005	2006	2007	2008	2010	2011	2012	2013	2014	2015	2016
+county	Eaton (MI)	2016
+county	Aleutians East (AK)	2002
+county	Crockett (TX)	2000
+county	Daniels (MT)	2000
+county	Caledonia (VT)	2008	2009	2010	2011	2012	2013	2014	2015	2016
+county	Catron (NM)	2000
+county	Surry (VA)	2000	2002
+county	Sheridan (MT)	2000
+county	Logan (OH)	1999
+county	Dewey (SD)	2000
+county	Hayes (NE)	2000	2009
+county	Rawlins (KS)	2000
+county	Russell (KS)	2000
+county	Meagher (MT)	2002
+county	Buffalo (SD)	2000	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015	2016
+county	Esmeralda (NV)	2000
+county	Richland (MT)	2008
+county	Greene (IL)	2015
+county	Blaine (NE)	1999	2000	2006	2008	2009	2010	2011	2012	2013	2014	2015	2016
+county	Harding (SD)	2000
+county	Grant (SD)	2000	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015	2016
+county	Lincoln (MN)	2014
+county	Emery (UT)	2011
+county	Comanche (KS)	2000
+county	Green (KY)	2000
+county	Archuleta (CO)	2000
+county	Newton (MS)	2011
+county	Cleveland (NC)	2004
+county	Issaquena (MS)	2003
+county	Rock (MN)	2016
+county	Fluvanna (VA)	2000
+county	McPherson (SD)	2000	2002
+county	Pend Oreille (WA)	1999	2000	2001	2002	2003	2004
+county	Mineral (NV)	2000
+county	Alexander (IL)	2000
+county	Bell (TX)	2010
+county	Mason (IL)	2005
+county	Sioux (NE)	2010
+county	Oregon (MO)	2000
+county	Stevens (KS)	2000
+county	Lamar (GA)	2006
+county	Richardson (NE)	2000	2010
+county	Lake (TN)	2002
+county	Morgan (GA)	2015	2016
+county	Richland (SC)	1999	2000	2001	2002	2003	2004	2015	2016
+county	Pawnee (NE)	2000
+county	Mitchell (KS)	2000
+county	St. Clair (MO)	2000
+county	Knox (NE)	2000
+county	Knox (MO)	2000
+county	Keya Paha (NE)	2000
+county	Jasper (SC)	1999	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2016
+county	Jackson (CO)	2000
+county	Lake and Peninsula (AK)	2011
+county	Henderson (IL)	2000
+county	Onslow (NC)	2013
+county	Jerome (ID)	2000
+county	Appomattox (VA)	2000	2010
+county	Asotin (WA)	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015	2016
+county	Kemper (MS)	2000
+county	Comanche (TX)	2000
+county	Gibson (TN)	2000
+county	Powell (KY)	2000
+county	Marshall (SD)	2000	2006
+county	Brown (NE)	2007
+county	Park (MT)	2009
+county	Schleicher (TX)	2000
+county	Wilcox (GA)	2000
+county	Hall (TX)	2002
+MSA	Fairbanks, AK	1999
+MSA	Grants Pass, OR	2014
+MSA	Los Angeles-Long Beach-Anaheim, CA	1999	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011
+MSA	Longview, TX	2015	2016
+MSA	Hattiesburg, MS	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015	2016
+MSA	Tallahassee, FL	2012
+MSA	Sacramento--Roseville--Arden-Arcade, CA	1999	2000
+MSA	Birmingham-Hoover, AL	2015	2016
+MSA	Oxnard-Thousand Oaks-Ventura, CA	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015	2016
+MSA	Boston-Cambridge-Newton, MA-NH	1999	2000	2001	2002	2003
+MSA	Jonesboro, AR	1999	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012
+MSA	Santa Rosa, CA	2016
