@@ -4,6 +4,8 @@ import sys
 from collections import defaultdict
 from export_data import *
 
+
+type_lenght = {}
 def export_county():
     logging.info('query attrs...')
     sql = 'select attr_name,attr_of_total,attr_value,page_id from attr'
@@ -92,52 +94,56 @@ def export_county():
             data.append('\t'.join(titles))
             is_print=False
 
-        lines.extend(all_attrs(businessall))
-        lines.extend(all_attrs(businessnoncommercial))
-        lines.extend(all_attrs(businessnonresident))
-        lines.extend(all_attrs(businessresident))
-        lines.extend(all_attrs(gained))
-        lines.extend(all_attrs(jobs))
-        lines.extend(all_attrs(lost))
-        lines.extend(all_attrs(netchange))
-        lines.extend(all_attrs(saleall))
-        lines.extend(all_attrs(salesperbusiness))
-        lines.extend(all_attrs(salesperemployee))
+        lines.extend(all_attrs(businessall,'businessall'))
+        lines.extend(all_attrs(businessnoncommercial,'businessnoncommercial'))
+        lines.extend(all_attrs(businessnonresident,'businessnonresident'))
+        lines.extend(all_attrs(businessresident,'businessresident'))
+        lines.extend(all_attrs(gained,'gained'))
+        lines.extend(all_attrs(jobs,'jobs'))
+        lines.extend(all_attrs(lost,'lost'))
+        lines.extend(all_attrs(netchange,'netchange'))
+        lines.extend(all_attrs(saleall,'saleall'))
+        lines.extend(all_attrs(salesperbusiness,'salesperbusiness'))
+        lines.extend(all_attrs(salesperemployee,'salesperemployee'))
         data.append('\t'.join(lines))
 
     open('data.txt','w').write('\n'.join(data))
 
 
 
-def all_attrs(pages):
+def all_attrs(pages,atype):
     col=[]
     for attr in pages:
         col.extend(attr[1:3])
+    
     if len(col)==0:
-        print 'error'
-    return col
+        col=['NULL']*type_lenght[atype]
+    else:
+        return col
 
-def all_title(pages):
+def all_title(pages,atype):
     tits=[]
     for attr in pages:
+
         tits.append(attr[3]+":"+attr[0]+":attr_of_total")
         tits.append(attr[3]+":"+attr[0]+":attr_value")
 
+    type_lenght[atype] = len(tits)
     return tits
 
 def all_titles(businessall,businessnoncommercial,businessnonresident,businessresident,gained,jobs,lost,netchange,saleall,salesperbusiness,salesperemployee):
     titles = []
-    titles.extend(all_title(businessall))
-    titles.extend(all_title(businessnoncommercial))
-    titles.extend(all_title(businessnonresident))
-    titles.extend(all_title(businessresident))
-    titles.extend(all_title(gained))
-    titles.extend(all_title(jobs))
-    titles.extend(all_title(lost))
-    titles.extend(all_title(netchange))
-    titles.extend(all_title(saleall))
-    titles.extend(all_title(salesperbusiness))
-    titles.extend(all_title(salesperemployee))
+    titles.extend(all_title(businessall,'businessall'))
+    titles.extend(all_title(businessnoncommercial,'businessnoncommercial'))
+    titles.extend(all_title(businessnonresident,'businessnonresident'))
+    titles.extend(all_title(businessresident,'businessresident'))
+    titles.extend(all_title(gained,'gained'))
+    titles.extend(all_title(jobs,'jobs'))
+    titles.extend(all_title(lost,'lost'))
+    titles.extend(all_title(netchange,'netchange'))
+    titles.extend(all_title(saleall,'saleall'))
+    titles.extend(all_title(salesperbusiness,'salesperbusiness'))
+    titles.extend(all_title(salesperemployee,'salesperemployee'))
     return titles
 
 def output_csv(path):
