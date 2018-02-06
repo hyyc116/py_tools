@@ -8,7 +8,8 @@ def test_cols(path):
         line = line.strip()
         length= len(line.split("\t"))
         if length!=196:
-            print line
+            # print line
+            print length
         # if len(line.split("\t"))!=96:
         #     print 'false'
 
