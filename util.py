@@ -113,6 +113,8 @@ def all_attrs(pages):
     col=[]
     for attr in pages:
         col.extend(attr[1:3])
+    if len(col)==0:
+        print 'error'
     return col
 
 def all_title(pages):
