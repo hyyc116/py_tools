@@ -35,7 +35,7 @@ def wrong_place(path):
     for place in place_year.keys():
         # if len(yearset - set(place_year[place]))!=0:
             # print place,yearset - set(place_year[place])
-        print place+"\t"+place_year[place]
+        print place+"\t"+str(place_year[place])
 
 if __name__ == '__main__':
     # test_cols(sys.argv[1])
