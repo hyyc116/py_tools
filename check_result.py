@@ -58,9 +58,37 @@ def wrong_place(path):
             # if len(place_year[place])==1:
             print atype+"\t"+place+"\t"+"\t".join([str(i) for i in atype_place_year[atype][place]])
 
+
+def two_data(path):
+    county_set=[]
+    msa_set=[]
+    counties = [] 
+    msas = []
+
+    for line in open(path):
+        line = line.strip()
+        splits = line.split("\t")
+        name = splits[1]
+        atype = splits[3]
+        if atype=='county':
+            counties.append(line)
+            county_set.append(name)
+        else:
+            msas.append(line)
+            msa_set.append(name)
+
+    print 'county',len(set(county_set))
+    print 'msa',len(set(msa_set))
+    open('county_content.txt','w').write('\n'.join(counties))
+    open('msa_content.txt','w').write('\n'.join(msas))
+
+
+
+
 if __name__ == '__main__':
     # test_cols(sys.argv[1])
     # wrong_place(sys.argv[1])
-    out_check()
+    # out_check()
+    two_data()
 
 
