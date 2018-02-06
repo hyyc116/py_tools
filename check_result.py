@@ -30,12 +30,9 @@ def wrong_place(path):
         place = splits[1]
         place_year[place].append(year)
 
-    # yearset = set(range(1999,2017))
-
     for place in place_year.keys():
-        # if len(yearset - set(place_year[place]))!=0:
-            # print place,yearset - set(place_year[place])
-        print place+"\t"+str(place_year[place])
+        # if len(place_year[place])==1:
+        print place+"\t"+"\t".join(place_year[place])
 
 if __name__ == '__main__':
     # test_cols(sys.argv[1])
