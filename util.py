@@ -92,7 +92,7 @@ def export_county():
             titles.extend(all_titles(businessall,businessnoncommercial,businessnonresident,businessresident,gained,jobs,lost,netchange,saleall,salesperbusiness,salesperemployee))
 
             data.append('\t'.join(titles))
-            logging.info(type_lenght)
+            logging.info("执行么:"+str(type_lenght))
             is_print=False
 
         lines.extend(all_attrs(businessall,'businessall'))
@@ -113,6 +113,7 @@ def export_county():
 
 
 def all_attrs(pages,atype):
+    logging.info(atype)
     col=[]
     for attr in pages:
         col.extend(attr[1:3])
