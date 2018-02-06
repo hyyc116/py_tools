@@ -113,12 +113,13 @@ def export_county():
 
 
 def all_attrs(pages,atype):
-    logging.info("hah"+atype)
+    # logging.info("hah"+atype)
     col=[]
+
     for attr in pages:
         col.extend(attr[1:3])
     
-    if len(col)==0:
+    if pages is None | len(col)==0:
         col=['NULL']*type_lenght[atype]
     else:
         return col
