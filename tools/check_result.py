@@ -38,6 +38,29 @@ def out_check():
         if '{:}\t{:}'.format(splits[1],splits[0]) in year_name_set:
             print line
 
+def check_un_crawled():
+    news=[]
+    for line in open('data_new.txt'):
+        line = line.strip()
+        splits = line.split('\t')
+        news.append('{:}\t{:}'.format(splits[1],splits[0]))
+    news = set(news)
+
+    for line in open("errors.txt"):
+        line = line.strip()
+        splits = line.split("\t")
+        name = splits[1]
+        years = splits[2:]
+        not_in = []
+        for year in years:
+            if '{:}\t{:}'.format(name,year) not in news:
+                not_in.append(year)
+
+        if len(not_in)>0:
+            print splits[0]+"\t"+name+"\t"+str(not_in)
+
+
+
 
 
 
@@ -89,6 +112,7 @@ if __name__ == '__main__':
     # test_cols(sys.argv[1])
     # wrong_place(sys.argv[1])
     # out_check()
-    two_data(sys.argv[1])
+    # two_data(sys.argv[1])
+    check_un_crawled()
 
 
