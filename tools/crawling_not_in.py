@@ -100,7 +100,7 @@ def crawl_all_missing_data(path):
         progress+=1
         time.sleep(2)
 
-        print 'progress:',progress
+        print 'progress:',progress,'/1193 ....'
 
         line = line.strip()
         state_value,county,county_id,year = line.split('\t')
