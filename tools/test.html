@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>YE Profile Dashboard | Explore Economic Activity in Your Community</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css" media="screen" />
+	
+	
+	<!-- 
+Clicky webstats restarted 6/30/16
+	<script src="//static.getclicky.com/js" type="text/javascript"></script>
+	<script type="text/javascript">try{ clicky.init(100969199); }catch(e){}</script>
+	<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100969199ns.gif" /></p></noscript>
+ -->
+	
+		
+	<script src="//static.getclicky.com/js" type="text/javascript"></script>
+	<script type="text/javascript">try{ clicky.init(100969199); }catch(e){}</script>
+	<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100969199ns.gif" /></p></noscript>
+	
+	
+
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<!-- <script src="assets/js/jquery-1.6.2.min.js"></script> -->
+	<!--<script type="text/javascript" src="assets/FusionCharts/FusionCharts.js"></script>-->
+	<!--<script type="text/javascript" src="../assets/FusionCharts/FusionCharts.js"></script>-->
+	
+	<link rel="shortcut icon" href="ye.ico" />
+	
+	<script>
+		var chartData = '';
+			// Determine device click event
+		if('ontouchstart' in window){ var click = 'touchstart';} 
+		else { var click = 'click'; }
+	</script>
+	
+	<script type="text/javascript" src="assets/js/jquery-ui.js"></script>
+	
+	<script src="assets/js/touchpunch.js"></script>
+	<script src="assets/js/jquery.tablesorter.min.js"></script>
+	<script src="assets/js/jquery.dataTables.min.js"></script>
+	<script src="assets/js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="assets/js/dragslider.js"></script>
+	<script type="text/javascript" src="assets/js/ye.js"></script>
+	
+	<script type="text/javascript" src="assets/js/GoogAnal.js"></script>
+	
+	<!-- for new HTML 5 only Fusion charts -->
+	<!-- 
+<script type="text/javascript" src="fusioncharts/fusioncharts.js"></script>
+	<script type="text/javascript" src="fusioncharts/themes/fusioncharts.theme.fint.js"></script>
+ -->
+	
+	<!-- for new HTML 5 only Fusion charts xt developer -->
+	<script type="text/javascript" src="fusioncharts-suite-n-xt-developer/js/fusioncharts.js"></script>
+	<script type="text/javascript" src="fusioncharts-suite-n-xt-developer/js/fusioncharts.charts.js"></script>
+	<script type="text/javascript" src="fusioncharts-suite-n-xt-developer/js/fusioncharts.gantt.js"></script>
+	<script type="text/javascript" src="fusioncharts-suite-n-xt-developer/js/fusioncharts.powercharts.js"></script>
+	<script type="text/javascript" src="fusioncharts-suite-n-xt-developer/js/themes/fusioncharts.theme.fint.js"></script>
+	
+	
+</head>
+<body>
+
+<div class="master-wrap">
+
+	<div class="mask"></div>
+	
+	
+
+
+
+
+
+
+
+
+
+	<!-- ************************************* -->
+	<!-- HEADER -->
+	<!-- ************************************* -->
+	<div class="header">
+		<div class="container">
+		<h1 class="<?=($plus==true)?'plus':'';?>"><a href="index.ye?-session=YEplus:8CB64B9607ea22C464Oyi1595DE4">Your Economy</a></h1>
+		<!--<h1 class="plus"><a href="index.lasso">Your Economy</a></h1>-->
+		<p>Your definitive source of economic data about business establishments, jobs, and sales across the United States</p>
+		</div>
+	</div>
+	
+	
+	<ul class="side-nav">
+		<li><a href="about.ye?-session=YEplus:8CB64B9607ea22C464Oyi1595DE4">ABOUT YE</a></li>
+		<li><a href="http://exceptionalgrowth.org/about.iegc" target=_new>Go BDRC</a></li>
+	</ul>
+
+
+
+
+
+
+
+	
+		
+	
+
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+					
+				
+
+
+	
+	<!-- MODAL BOX -->
+			<div class="modal-wrap">
+				<div class="modal help bottom" style="top: 120px;left:360px;width:350px;">
+					<h5>Employment Stages and Business Type</h5>
+					<p>The total number of businesses are broken down by Employment Stages and Business Type for each comparison year. % of Total for the Stages will sum to 100% of All indicator, as will each  Business Type. </p>
+				</div>
+				
+				
+				<!-- Temp message about 2015 births -->
+				
+				
+				
+				<div class="modal help bottom" style="top: 120px;left:360px;width:350px;">
+					<h5>Employment Stages and Growth Factors</h5>
+					<p>The total number of businesses are broken down by Employment Stages and Growth Factors for each comparison year. Both Employment Stages and Growth Factors will total to 100% of the Gained indicator. 
+					For more on <a href="/profile/assets/downloads/GrowthFactors.pdf?-session=YEplus:8CB64B9607ea22C464Oyi1595DE4" class="" target=_new>Growth Factors</a>.</p>
+				</div>
+				
+				
+				
+				<!-- 
+<div class="modal help bottom" style="top:460px;left:300px;width:440px;">
+							<h5>Graphs by Stages</h5>
+							<p>For each YE Indicator, see the impact employment stages have on the region and period selected.</p>
+							[if: $type!='s']
+							 <p>Employment Stages are defined by the number of employees: <br/>Self-Employed (1)<br/> 2-9 Employees<br/> Stage 2 (10-99)<br/> Stage 3 (100-499)<br/> Stage 5 (500+)</p>
+							[else]
+							<p>Sales Stages are defined by sales focusing on the middle-market as defined by <a href="http://www.middlemarketcenter.org" target=_new>The National Center for the Middle Market</a>: <br/>Small - Less Than $10Million<br/>Middle Market - $10 Million-$50 Million<br/> Middle Market - $50 Million-$100 Million<br/>Middle Market - $100 Million-$1 Billion<br/>Large - More Than $1 Billion</p>
+							[/if]
+				</div>
+ -->
+			</div>
+	<!-- MODAL BOX -->
+
+
+	<!-- ************************************* -->
+	<!-- CONTENT -->
+	<!-- ************************************* -->
+	
+	
+	<!-- ************************************* -->
+	<!-- USER BAR -->
+	<!-- ************************************* -->
+	
+	<div class="user-bar container">
+		<h4><a href="javascript:history.go(-1)" class="print_button results-hide">&laquo; DASHBOARD</a></h4>   
+		<a href="?-session=YEplus:8CB64B9607ea22C464Oyi1595DE4" class="help">Get Help With This Website</a>
+		<div class="clear"></div>
+	</div>
+	
+	
+
+
+	<div class="details content wrap">
+		<div class="container">
+			<h2 class="alt">
+			
+		
+			
+						
+
+			JOBS CHANGE
+			
+			 <span class="key-color"> GAINED  </span>
+			 
+			   
+
+			</h2>
+			
+			<h3 class="special">
+			
+					
+					  
+					 
+					 Bon Homme (SD) County &nbsp;   
+					 
+					 2001 and 2016</h3>
+					
+			<!-- No show for sales indicators -->		
+					
+					
+
+			<table class="stages bottom-10">
+				<tr class="sections">
+					<th colspan="1" class="ignore"></th>
+					<!-- <th colspan="4"><a href="" class="help">COMPOSTITION</a></th> -->
+<!-- 
+					[if: $key=='all' || $key=='resident' || $key=='nonresident' || $key=='noncommercial' || $key=='external' ||  $key=='local'  ||  $key=='core'  ||  $key=='macro']<th colspan="2"> <a href="" class="help">NEW</a></th>[/if]
+ -->
+				</tr>
+				<tr class="headings">
+					<th>
+					
+					JOBS
+					
+					</th>
+					<th>2001</th>
+					<th>% of TOTAL</th>
+					<th>2016</th>
+					<th>% of TOTAL</th>
+				</tr>
+				
+				
+				
+ 				
+ 				
+ 				
+ 				
+ 				
+ 				
+ 				
+ 				
+ 				
+ 				
+				
+				
+				
+				
+		
+			
+			
+				
+				
+				
+				
+				<tr>
+					<td>GAINED</td>
+					<td>212</td>
+					<td>100</td>
+					<td>508</td>
+					<td>100</td>
+				</tr>
+				<tr>
+					<td>&nbsp;&nbsp;&nbsp;Self-Employed (1)</td>
+					<td>19</td>
+					<td>9.0</td>
+					<td>12</td>
+					<td>2.4</td>
+				</tr>
+				<tr>
+					<td>&nbsp;&nbsp;&nbsp;2-9 Employees</td>
+					<td>150</td>
+					<td>70.8</td>
+					<td>188</td>
+					<td>37.0</td>
+				</tr>
+				<tr>
+					<td>&nbsp;&nbsp;&nbsp;Stage 2 (10-99)</td>
+					<td>38</td>
+					<td>17.9</td>
+					<td>168</td>
+					<td>33.1</td>
+				</tr>
+				<tr>
+					<td>&nbsp;&nbsp;&nbsp;Stage 3 (100-499)</td>
+					<td>5</td>
+					<td>2.4</td>
+					<td>140</td>
+					<td>27.6</td>
+				</tr>
+				<tr>
+					<td>&nbsp;&nbsp;&nbsp;Stage 4 (500+)</td>
+					<td>0</td>
+					<td>0.0</td>
+					<td>0</td>
+					<td>0.0</td>
+				</tr>
+				
+				
+				<tr><td span style="padding-right: 0px; font-size: 10px; font-weight: 0; background: #fff; height: 0px;"></td><td span style="padding-right: 0px; font-size: 10px; font-weight: 0; background: #fff; height: 0px;"></td><td span style="padding-right: 0px; font-size: 10px; font-weight: 0; background: #fff; height: 0px;"></td><td span style="padding-right: 0px; font-size: 10px; font-weight: 0; background: #fff; height: 0px;"></td><td span style="padding-right: 0px; font-size: 10px; font-weight: 0; background: #fff; height: 0px;"></td></tr>
+				
+				
+				
+				<tr>
+					<td><a href="?-session=YEplus:8CB64B9607ea22C464Oyi1595DE4" class="help">GROWTH FACTORS</a></td>
+					<td>212</td>
+					<td>100</td>
+					<td>508</td>
+					<td>100</td>
+				</tr>
+				<tr>
+					<td>New Startups</td>
+					<td>137</td>
+					<td>64.6</td>
+					<td>424</td>
+					<td>83.5</td>
+				</tr>
+				<tr>
+					<td>Expansion Startups</td>
+					<td>2</td>
+					<td>0.9</td>
+					<td>0</td>
+					<td>0.0</td>
+				</tr>
+				<tr>
+					<td>Expansions</td>
+					<td>69</td>
+					<td>32.5</td>
+					<td>84</td>
+					<td>16.5</td>
+				</tr>
+				<tr>
+					<td>Move In</td>
+					<td>4</td>
+					<td>1.9</td>
+					<td>0</td>
+					<td>0.0</td>
+				</tr>
+	
+				
+				
+
+				
+				
+
+				
+				
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+					
+				
+				
+			</table>
+		
+		
+			
+			<!-- ************************************* -->
+			<!-- Comparison and Net calculations and display -->
+			<!-- ************************************* -->
+		
+			
+			
+
+					<div align="center">
+<!-- 
+					[if: $key=='all-sales']<strong>K</strong> is an abbreviation for one thousand. YE replaces the last three zeros of the numeral with "K": for instance, 67,357,695K for 67,357,695,000.</br>[/if]
+ -->
+					
+					
+					
+					
+					</div>
+				
+					&nbsp;
+						
+			
+			
+			<!-- Charts -->
+			
+				<div class="">
+				
+			<!-- <h4>COMPARISON BY STAGES<br/>&nbsp;</h4>  -->
+				
+					
+					
+			<div  id="stagecomp"></div>
+					
+				<!-- 
+	[if: $key=='all' || $key=='resident' || $key=='nonresident' || $key=='noncommercial']
+					<div class=""><div  id="estabtype"></div><div  id="estabtype2"></div></div>
+					[/If]	
+ -->
+					
+					
+	<!-- 
+	[if: $key=='all' || $key=='resident' || $key=='nonresident' || $key=='noncommercial']			
+					
+				<div class="chartsection clear">	
+				
+				<div class="">
+					<h3 class="green black">[$year1]</h3>
+				 			<div id="estabtype">chart</div>
+				</div>
+				<div class="">
+					<h3 class="green black">[$year2]</h3>
+							<div id="estabtype2">chart</div>
+				</div>	
+				
+				</div>
+		[/if]			
+					
+					
+					[if: $key=='change']<div  id="netchange"></div>[/If]	
+ -->	
+					
+					
+					
+					
+					
+					
+					
+	
+			
+					
+	
+			
+			
+		
+			</div>
+				
+			</div>
+			</div>
+	
+  				<!-- 
+ [ 	
+  				 //insert graphs	
+  				 	
+	         		include:'charts/graphsdetail.ye';
+	         		
+	      			 ]
+ -->
+
+	      		 
+	      		 
+	
+	<script>
+		if( $.cookie('key-indicator') ){
+			$('.key-color').addClass( $.cookie('key-indicator') );
+		}
+	</script>
+
+
+</div><!-- end .wrap -->
+
+	<!-- ************************************* -->
+	<!-- FOOTER -->
+	<!-- ************************************* -->
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="third">
+					<a href="http://www.uwex.edu/about/business-entrepreneurship.html" target="_blank"><img src="assets/images/uwextension.png" /></a>
+					<p>YE is powered by the UW Extension<a href="http://www.uwex.edu/about/business-entrepreneurship.html" target="_blank"> Division for Business and Entrepreneurship.</a></p> 
+				</div>
+				<div class="third">
+					<center>
+					<a href="https://www.getfeedback.com/r/SfD0K6PY" target=_new><img src="assets/images/emailye.png" /></a>
+					<a href="https://www.getfeedback.com/r/SfD0K6PY" target=_new>Inquires or HELP! &raquo;</center>
+				</div>
+				<div class="third">
+					<a href="http://bdrc.uwex.edu" target="_blank"><img src="assets/images/bdrc.png" class="left" />
+					<p>Business Dynamics Research Consortium</a> - business insights and applications.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+
+
+	
+</body>
+</html>

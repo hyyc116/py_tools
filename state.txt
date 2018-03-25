@@ -1,0 +1,55 @@
+id	name	value
+0	Delaware	DE
+1	Hawaii	HI
+2	Puerto Rico	PR
+3	Texas	TX
+4	Massachusetts	MA
+5	Maryland	MD
+6	Iowa	IA
+7	Maine	ME
+8	Idaho	ID
+9	Michigan	MI
+10	STATE	US
+11	Utah	UT
+12	Minnesota	MN
+13	Missouri	MO
+14	Illinois	IL
+15	Indiana	IN
+16	Mississippi	MS
+17	Montana	MT
+18	Alaska	AK
+19	Alabama	AL
+20	Virginia	VA
+21	Arkansas	AR
+22	Virgin Islands	VI
+23	North Carolina	NC
+24	North Dakota	ND
+25	Nebraska	NE
+26	Rhode Island	RI
+27	Arizona	AZ
+28	New Hampshire	NH
+29	New Jersey	NJ
+30	Vermont	VT
+31	New Mexico	NM
+32	Florida	FL
+33	Nevada	NV
+34	Washington	WA
+35	New York	NY
+36	South Carolina	SC
+37	South Dakota	SD
+38	Wisconsin	WI
+39	Ohio	OH
+40	Georgia	GA
+41	Oklahoma	OK
+42	California	CA
+43	West Virginia	WV
+44	Wyoming	WY
+45	Oregon	OR
+46	Kansas	KS
+47	Colorado	CO
+48	Kentucky	KY
+49	Connecticut	CT
+50	Pennsylvania	PA
+51	Louisiana	LA
+52	Tennessee	TN
+53	District of Columbia	DC

@@ -40,13 +40,13 @@ def out_check():
 
 def check_un_crawled():
     news=[]
-    for line in open('data_new.txt'):
+    for line in open('../data_new.txt'):
         line = line.strip()
         splits = line.split('\t')
         news.append('{:}\t{:}'.format(splits[1],splits[0]))
     news = set(news)
 
-    for line in open("errors.txt"):
+    for line in open("../errors.txt"):
         line = line.strip()
         splits = line.split("\t")
         name = splits[1]
