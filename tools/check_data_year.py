@@ -36,7 +36,7 @@ def check_lines():
 
 
     name_year=defaultdict(list)
-    for line in open('../county_columns_checked.txt'):
+    for line in open('../county_add_missing_data.txt'):
         line = line.strip()
         if line.startswith('year'):
             continue
@@ -46,7 +46,7 @@ def check_lines():
         name_year[name].append(year)
 
 
-    years = set([str(y) for y in range(1998,2017)])
+    years = set([str(y) for y in range(2000,2017)])
     # print years
     # print len(name_year.keys())
 
@@ -58,9 +58,13 @@ def check_lines():
         # if len(not_int_years)>0:
             # print name,','.join(not_int_years)
 
-        for year in not_int_years:
-            value,state_value = county_attr[name]
-            print '{:}\t{:}\t{:}\t{:}'.format(state_value,name,value,year)
+        # for year in not_int_years:
+            # value,state_value = county_attr[name]
+            # print '{:}\t{:}\t{:}\t{:}'.format(state_value,name,value,year)
+
+        if len(not_int_years)==0:
+            print name
+
 
 
 if __name__ == '__main__':
